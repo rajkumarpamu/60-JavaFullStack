@@ -1,0 +1,296 @@
+Java Full Stack:
+----------------
+6 Months
+
+ Module-1  (back End developer (Module-1 & module -3))
+----------
+Core Java
+Advance Java
+Oracle SQL
+
+ Module-2   (Front end developer)
+-----------
+Html
+CSS
+Java Script
+Angular JS
+
+ Module-3
+ -----------
+ Spring
+ Spring Boot
+ Microservices
+ All Real time tools
+
+
+Java:
+-----
+
+
+Platform Dependent :
+--------------------
+C 
+
+
+Platform InDependent :
+--------------------
+Java
+
+
+ C  VS Java
+
+
+Demo.c  (ASCII) [0-9 a-z A-Z special symbols]
+
+
+ C  compiler
+
+
+Demo.exe (Binary Instructions)
+
+
+Run
+
+
+O/S Output
+
+
+
+
+                          Demo.exe (Binary Instructions)
+
+
+
+
+           Windows             Linux                IOS
+
+
+
+
+
+
+                                 Demo.java  (Unicode)[ASCII + other langugaes]
+
+
+
+                                 java compiler
+
+
+
+           Intermdeiate file     Demo.class (Special Java Instructions / byte Code) 
+
+
+
+                            JVM             JVM       JVM
+
+                          Windows          Linux       IOS
+
+
+Write Once Run Anywhere Programming language
+
+
+
+D:\55-Corejava>javac FirstProgram.java
+
+FirstProgram.class
+
+D:\55-Corejava>java FirstProgram
+test
+
+
+JVM:
+
+Class Loader Sub System
+JVM Memory
+Execution Engine
+
+
+Class Loader Sub System:
+------------------------
+
+1)Loading
+2)Linking
+3)Initialization
+
+Loading:
+--------
+
+.class file is loaded into JVM.It will byte code to binary format and stores the info into method area.
+
+1)Fully Qualified name of the class () -> FirstProgram.java com.demo.FirstProgram
+2)Its Immediate Parent class  ->  java/lang/Object
+3)It .class is interface or enum or class
+4)Variables , Methods ,Constructor
+5)Modifers
+
+JVM will create and Object of type Class and stores it into Heap Area.
+
+For every loaded class JVM will create Class object.
+
+package com.demo;
+
+public class FirstProgram {
+	
+	public static void main(String[] args) {
+		
+		FirstProgram firstProgram = new  FirstProgram();
+		Class cls = firstProgram.getClass();
+		
+		System.out.println(cls.getName());
+		System.out.println(cls.getSuperclass());
+		System.out.println(cls.isEnum());
+		System.out.println(cls.isInterface());
+		System.out.println(cls.getClassLoader());
+		
+	}
+
+}
+
+com.demo.FirstProgram
+class java.lang.Object
+false
+false
+sun.misc.Launcher$AppClassLoader@73d16e93
+
+
+
+Boot Strap Class Loader -> IMplementation is done in C Language
+Extension Clas Loader
+Application Class loader -> IMplementation is done in Java Language
+
+sun.misc.Launcher$AppClassLoader@73d16e93
+
+sun.misc.Launcher$AppClassLoader@73d16e93 - Java lang -> printed the object
+null
+
+
+package com.demo.mt;
+
+public class FirstProgram {
+	
+	public static void main(String[] args) {
+		
+		FirstProgram firstProgram =new FirstProgram();
+		System.out.println(firstProgram.getClass().getClassLoader());
+		
+		System.out.println(String.class.getClass().getClassLoader());
+		
+	}
+
+}
+
+
+C:\Program Files\Java\jdk-1.8\jre\lib
+JAVA_HOME/jre/lib  - Boot Strap Class Path
+C:\Program Files\Java\jdk-1.8\jre\lib\ext
+JAVA_HOME/jre/lib/ext - eXTENSION Class Path
+
+Error: Could not find or load main class Abc
+Caused by: java.lang.ClassNotFoundException: Abc
+
+
+
+Error: LinkageError occurred while loading main class Sample
+        java.lang.ClassFormatError: Truncated class file
+
+ByteCodeVerfier
+
+
+JVM will intailize all the static variables with default values
+
+Intilization:
+------------
+all the static variables with actual values
+
+
+JVM Memory:
+----------
+Heap Area:
+---------
+Heap Area is to represnt all objects in java
+
+Method Area/Class Area
+--------------------
+1)Fully Qualified name of the class () -> FirstProgram.java com.demo.FirstProgram
+2)Its Immediate Parent class  ->  java/lang/Object
+3)It .class is interface or enum or class
+4)Variables , Methods ,Constructor
+5)Modifers
+
+Java stack
+----------
+
+
+
+PC register
+-----------
+Deals with address for currently executing instructions.
+
+
+Java Native stack
+------------------
+
+Non Java 
+-------
+c function calls is addeed to native stack.
+
+--------------------------------------------------------------
+
+Execution ENgine:          Native Interfcae         Native Libraries  
+------------------
+
+Interpreter:
+-----------
+
+Read byte code line by line and executes the code
+
+
+JIT Compiler
+-----------
+
+Native format -> Non Java format
+
+Garbage Collector
+---------------------
+
+
+Allocation of memory JVM
+
+De allocation is also done by Garbage Collector
+
+
+JDK : Java Development Kit
+
+
+JRE : Java Runtime Environment
+
+
+JVM : Java Virtual Machine
+
+Download JDK:
+--------------
+
+https://www.oracle.com/in/java/technologies/javase/javase8-archive-downloads.html
+
+
+Java is Platform Independent
+
+WORA Language (Write once run anywhere programming logic)
+
+Byte (Platfrom Indepedent)
+
+JVM
+
+Java dynamic Programming:
+------------------------
+
+Allocation of memory will happen at runtime
+Deallocation is done Garbage Collector
+
+
+Java is class based object oriented prohramming.
+
+class and object
+
+
+package sta
