@@ -1,0 +1,195 @@
+https://github.com/rajkumarpamu/60-JavaFullStack
+:
+Introduction:
+-------------
+
+Platform Independent
+
+Object oriented Programming:
+----------------------------
+
+Re usablity
+
+class and object
+
+class is a blue print
+
+class:
+-----
+
+JSE API
+JEE API
+JME API
+
+
+Syntax:
+--------
+
+package statement;
+import statement;
+
+class <classname>{
+	
+	//variables
+	//methods
+	
+	public static void main(String[] ar){
+
+      //statemnt
+
+	}
+
+}
+
+Reserved Words 
+
+package
+import
+class
+public
+static
+void
+
+
+Editor:
+
+Notepad
+Notepad++  -> 1
+Sublime
+
+IDE:
+
+STS       -> 
+Eclipse
+MyEclipse
+InteillJ
+NetBeans
+
+
+Save the program .java extension
+
+Compile:
+---------
+
+javac
+
+syntax:
+---------
+
+javac FIlename.java
+
+
+Run:
+----
+
+java
+
+
+syntax:
+-----
+
+java  classname
+
+IDE
+
+Command Line
+
+
+
+https://www.oracle.com/in/java/technologies/javase/javase8-archive-downloads.html
+
+Java
+
+
+ JDK -> Java Development Kit (javac , java etc)
+
+
+ JRE -> Java Runtime Environment (JVM or core Java api classes )
+
+
+class FirstProgram{
+	
+	public static void main(String[] ar){
+		
+		
+		System.out.print("welcome to java");
+		
+	}
+	
+}
+
+D:\60-JavaFullStack>javac FirstProgram.java
+
+D:\60-JavaFullStack>java FirstProgram
+welcome to java
+D:\60-JavaFullStack>
+
+
+
+class FirstProgram{
+	
+	public static void main(String[] ar){
+		
+		
+		System.out.print("welcome to java");
+		
+	}
+	
+}
+
+
+D:\60-JavaFullStack>java SecondProgram
+Error: Could not find or load main class SecondProgram
+Caused by: java.lang.ClassNotFoundException: SecondProgram
+
+D:\60-JavaFullStack>java FirstProgram
+welcome to java
+D:\60-JavaFullStack>
+
+
+class A{
+	
+}
+
+class B{
+	
+}
+
+class C{
+	
+}
+
+
+For every class dec javac will  generate its corresponding .class files
+
+
+Data Types:
+----------
+
+Statically typed programming language
+
+ ex:
+
+ int age=30;
+
+
+ double salary=10000.0;
+ int  id= 133;
+ String name= "sachin";
+ char grade='A';
+ boolean result =true;
+
+
+D:\60-JavaFullStack>javac FirstProgram.java
+FirstProgram.java:7: error: incompatible types: boolean cannot be converted to int
+                int a = true;
+                        ^
+1 error
+
+
+Data types:
+----------
+
+Primitve and
+Non Primitive data types 
+
