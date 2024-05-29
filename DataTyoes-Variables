@@ -1,0 +1,263 @@
+Data Types:
+-----------
+
+Specify what type of data we are storing in the memory.
+
+int age =30;
+
+int -> data type (-ve to +ve)
+
+age -> identifier/variable
+
+= -> Assigment Operator
+
+30 -> Value
+
+Primitive :
+-----------
+
+Holds single values
+
+Integer Category: (-ve to +ve without decimal)
+-----------------
+
+byte     1 byte
+short    2 bytes
+int      4 bytes
+long     8 bytes
+
+ex:100
+
+Floating Point Category: (-ve to +ve with decimal)
+------------------------
+
+float      4 bytes
+double     8 bytes
+
+exL: 100.0
+
+
+
+Character Category:    (Single Chracter)
+---------------------
+
+char       2 bytes
+
+c
+
+Boolean Catgeory:   (true or false)
+-----------------
+
+boolean    JVM dependent
+
+true
+
+Variable Dec:
+-------------
+
+
+datatype variableName;
+
+int age;
+
+Default values:
+---------------
+
+Integer Catgeory :  0
+FLoating Point Category : 0.0
+Character category : space
+Boolean  : false
+
+
+Variable Initialization:
+------------------------
+Assigning valuwe to a variable for the first time
+
+   int age;
+   age=30;
+
+
+
+
+variable Assigment:
+-------------------
+
+Assigning valuwe to a variable from second time
+
+int age;
+age=30;
+age=31;
+
+
+
+
+
+class  DataTypesDemo{
+
+  public static void main(String ar[]){
+	  
+	  
+	  int employeeId ; //variable Dec
+	  
+	  employeeId=123; //variable Intialization
+	  
+	  System.out.println("Before Assigment employeeId is :"+employeeId);
+	  
+	  employeeId=124; //variable Assigmnet
+	  
+	   System.out.println("After Assigment employeeId is :"+employeeId);
+ 
+  }
+
+}
+
+
+D:\60-JavaFullStack>javac DataTypesDemo.java
+
+D:\60-JavaFullStack>java DataTypesDemo
+Before Assigment employeeId is :123
+After Assigment employeeId is :124
+
+
+What happens when we declare a variable in Java?
+-------------------------------------------
+
+
+     double salary = 5000.0;
+
+
+
+public class SecondProgram {
+
+	public static void main(String[] args) {
+
+		
+		System.out.println(Byte.SIZE);
+		System.out.println(Short.SIZE);
+		System.out.println(Integer.SIZE);
+		System.out.println(Long.SIZE);
+		
+
+	}
+
+}
+
+8  - 1 byte
+16 - 2 bytes
+32 - 4 bytes
+64 - 8 bytes
+
+
+package com.demo;
+
+public class SecondProgram {
+
+	public static void main(String[] args) {
+
+		System.out.println(Float.SIZE);
+		System.out.println(Double.SIZE);
+
+	}
+
+}
+
+
+32
+64
+
+
+
+public class SecondProgram {
+
+	public static void main(String[] args) {
+
+		System.out.println(Character.SIZE);
+		
+
+	}
+
+}
+
+16
+
+
+byte b;
+
+int age =30;
+byte gae =140;
+
+public class SecondProgram {
+
+	public static void main(String[] args) {
+
+		System.out.println(Byte.SIZE);
+		System.out.println(Byte.MIN_VALUE);
+		System.out.println(Byte.MAX_VALUE);
+		
+
+	}
+
+}
+
+8
+-128
+127
+
+
+1 byte = 8 bits
+
+  noofbits-1           noifbits-1
+-2              0    2    -         1
+
+
+
+- 128          0      +127
+
+
+package com.demo;
+
+public class SecondProgram {
+
+	public static void main(String[] args) {
+
+		System.out.println(Short.SIZE);
+		System.out.println(Short.MIN_VALUE);
+		System.out.println(Short.MAX_VALUE);
+
+		System.out.println(Math.pow(2, 15));
+
+	}
+
+}
+
+
+16
+-32768
+32767
+32768.0
+
+
+32
+-2147483648
+2147483647
+
+
+
+package com.demo;
+
+public class SecondProgram {
+
+	public static void main(String[] args) {
+
+		System.out.println(Character.SIZE);
+		System.out.println(Character.MIN_VALUE);
+		System.out.println(Character.MAX_VALUE);
+
+		
+		//0-65535 [ASCII+ other languages ]
+		//0-255 [0-9 a-z A-Z Special symbols]
+		System.out.println(Math.pow(2, 16));
+
+	}
+
+}
