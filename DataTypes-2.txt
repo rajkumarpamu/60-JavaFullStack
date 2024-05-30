@@ -1,0 +1,215 @@
+
+Integer Category:
+----------------
+
+Default Value : 0
+Default data type : int
+
+package com.demo;
+
+public class SecondProgram {
+
+	public static void main(String[] args) {
+
+		System.out.println(10);
+
+	}
+
+}
+
+package com.demo;
+
+public class SecondProgram {
+	
+	int a;
+
+	public static void main(String[] args) {
+
+		SecondProgram program = new SecondProgram();
+		
+		System.out.println(program.a);
+
+	}
+
+}
+
+
+Floating Point Category:
+------------------------
+
+default value : 0.0
+default type : double
+
+package com.demo;
+
+public class SecondProgram {
+	
+	double a;
+
+	public static void main(String[] args) {
+
+		SecondProgram program = new SecondProgram();
+		
+		System.out.println(program.a);
+
+	}
+
+}
+
+
+package com.demo;
+
+public class SecondProgram {
+
+	public static void main(String[] args) {
+
+		System.out.println(10.8);
+		System.out.println(10);
+
+	}
+
+}
+
+
+Boolean Category:
+------------------
+
+Default datatype : boolean
+Default value : false
+
+package com.demo;
+
+public class SecondProgram {
+ 	boolean result;
+
+	public static void main(String[] args) {
+
+		SecondProgram program = new  SecondProgram();
+		System.out.println(program.result);
+	}
+
+}
+
+
+Result:
+false
+
+
+Character Category:
+-------------------
+
+char
+
+default value : space
+
+Exception in thread "main" java.lang.Error: Unresolved compilation problem: 
+	Type mismatch: cannot convert from int to byte
+
+	at com.demo.SecondProgram.main(SecondProgram.java:9)
+
+
+package com.demo;
+
+public class SecondProgram {
+
+	public static void main(String[] args) {
+
+		byte age = 126;
+		System.out.println("At Initialization :" + age);
+		age = 127;
+		System.out.println("At Assigment-1 :" + age);
+
+	}
+
+}
+
+
+package com.demo;
+
+public class SecondProgram {
+
+	public static void main(String[] args) {
+
+	
+		int marks=100;
+		char grade='E';
+		boolean result=true;
+		double percentage=78.5;
+		String name="raj kumar";
+		
+		System.out.println("Marks :"+marks);
+		System.out.println("Grade :"+grade);
+		System.out.println("Result :"+result);
+		System.out.println("Percentage :"+percentage);
+		System.out.println("Name :"+name);
+		
+
+	}
+
+}
+
+Integer Categry:
+---------------
+
+byte
+short
+int
+long
+
+
+package com.demo;
+
+public class SecondProgram {
+
+	public static void main(String[] args) {
+
+		System.out.println(Integer.MAX_VALUE);// 2147483647
+		System.out.println(Integer.MIN_VALUE);// -2147483648
+
+		System.out.println(Long.MAX_VALUE);// 9223372036854775807
+		System.out.println(Long.MIN_VALUE);// -9223372036854775807
+
+		long aadharNumber = 9223372036854775807L;
+		System.out.println(aadharNumber);
+	}
+
+}
+
+
+Floating Point:
+------------------
+float
+double
+
+package com.demo;
+
+public class SecondProgram {
+
+	public static void main(String[] args) {
+
+		float percenatge = 99.78F;
+		System.out.println(percenatge);
+
+	}
+
+}
+
+
+STS
+IntelliJ
+
+javac not recognozed as an internal or external command
+
+internal - Windwos  (ipconfig)
+
+ external - javac
+
+ set path= C:\Program Files\Java\jdk-1.8\bin;
+
+
+
+
+
+
+
+
