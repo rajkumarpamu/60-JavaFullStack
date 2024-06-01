@@ -1,0 +1,309 @@
+Binary Operators:
+-----------------
+
+Arithmetic Operators:
+--------------------
+
++   - Arithmetic Addition
+
+-   - Arithmetic Substraction
+
+*   - Arithmetic Multiplication
+
+/   - - Arithmetic Division
+
+%   - - Arithmetic Modulus
+
+
+package com.demo.operators;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		int a = 50;
+		int b = 20;
+
+		System.out.println(a + b);
+		System.out.println(a - b);
+		System.out.println(a * b);
+		System.out.println(a / b);// Quotient
+		System.out.println(a % b);// Reminder
+	}
+
+}
+
+
+package com.demo.operators;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		
+		
+		System.out.println(10/3);
+		System.out.println(10/3.0);
+		System.out.println(10/3.0F);
+	}
+
+}
+
+
+3
+3.3333333333333335 - Double precision  - 16 Decimal Digits
+3.3333333          - Single precision  - 7 Decimal Digits
+
+
+package com.demo.operators;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		
+	
+		System.out.println(10/0);
+	}
+
+}
+
+
+Exception in thread "main" java.lang.ArithmeticException: / by zero
+	at com.demo.operators.Demo.main(Demo.java:9)
+
+
+public class Demo {
+
+	public static void main(String[] args) {
+		
+	
+		System.out.println(10/0.0);
+	}
+
+}
+
+
+Infinity
+
+
+package com.demo.operators;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		
+	
+		System.out.println(-10/0.0);
+	}
+
+}
+
+
+-Infinity
+
+
+package com.demo.operators;
+
+public class Demo {
+
+	public static void main(String[] args) {
+
+		byte a = 10;
+		byte b = 20;
+
+		int sum = a + b;
+
+		System.out.println(a + b);
+
+	}
+
+}
+
+
+
+package com.demo.operators;
+
+public class Demo {
+
+	public static void main(String[] args) {
+
+		byte a = 10;
+		short b = 20;
+
+		int sum = a + b;
+
+		System.out.println(a + b);
+
+	}
+
+}
+
+
+package com.demo.operators;
+
+public class Demo {
+
+	public static void main(String[] args) {
+
+		int a = 10;
+		long b = 20;
+
+		long sum = a + b;
+
+		System.out.println(sum);
+
+	}
+
+}
+
+
+package com.demo.operators;
+
+public class Demo {
+
+	public static void main(String[] args) {
+
+		char a = 'A';
+		char b = 'B';
+
+		int result = a + b;
+
+		System.out.println(result);
+
+	}
+
+}
+
+
+package com.demo.operators;
+
+public class Demo {
+
+	public static void main(String[] args) {
+
+		
+		int a=10;
+		float b =10.0F;
+		
+		float result = a+b;
+
+		System.out.println(result);
+
+	}
+
+}
+
+
+Relational Operators:
+---------------------
+
+>      -> Greater than
+
+<      -> Lesser than
+
+>=     -> Greater than or equals to
+
+<=     -> Lesser than or equals to
+
+==    ->  equals to
+
+!=    ->  not equals to
+
+Note:
+
+If we perform any operations using relational operators result will be always boolean.
+
+
+package com.demo.operators;
+
+public class Demo {
+
+	public static void main(String[] args) {
+
+		int a = 10;
+		int b = 20;
+
+		System.out.println("Min :" + (a < b));
+		System.out.println("Max :" + (a > b));
+		System.out.println(a >= b);
+		System.out.println(a <= b);
+		System.out.println(a == b);
+		System.out.println(a != b);
+
+	}
+
+}
+
+
+package com.demo.operators;
+
+public class Demo {
+
+	public static void main(String[] args) {
+
+		System.out.println(true == false);
+		System.out.println(true != false);
+
+	}
+
+}
+
+
+public class Demo {
+
+	public static void main(String[] args) {
+
+		int i1=10;
+		if(i1%2 == 0) {
+			System.out.println("hello");
+		}
+	}
+
+}
+
+
+package com.demo.operators;
+
+public class Demo {
+
+	public static void main(String[] args) {
+
+		int a=10;
+		
+		int c= -(a)+20;
+		
+		System.out.println(c);
+	}
+
+}
+
+
+Operators with higher precedence are evaluated before operators with relatively lower precedence.
+
+int x = 5;
+x = x++ * 2 + 3 * –x;
+
+int a = 9;
+a++;
+System.out.println (a);
+a -= a-- - --a;
+System .out.println (a);
+
+y=10 
+int z=(++y * (y++ +5));
+
+package com.demo.operators;
+
+public class Demo {
+
+	public static void main(String[] args) {
+
+		int y = 10; //12
+
+		int z = (++y * (y++ + 5)); //11 * 11+5 = 11*16 = 176
+		
+		System.out.println(z);
+	}
+
+}
+
+
+https://simplycoding.in/java-operators-and-operator-precedence-questions/
