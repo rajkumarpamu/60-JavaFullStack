@@ -1,0 +1,165 @@
+Loops:
+-----
+
+for loop:
+--------                8(false)
+                        5(true)
+         1              2(true)      4 7
+for(intialization ; condition ; inc/dec/expression ){
+	 3 , 6 //statement
+}
+
+package com.demo.loops;
+
+public class Loops {
+
+	public static void main(String[] args) {
+
+		int sum = 0;
+		for (int i = 1; i <= 10; i++) {
+			 sum= sum+i;
+		}
+
+		System.out.println("sum is ;"+sum);
+	}
+
+}
+
+
+package com.demo.loops;
+
+public class Loops {
+
+	public static void main(String[] args) {
+
+		
+		int num= 9;
+		for (int i = 1; i <= 10; i++) {
+			 System.out.println(num*i);
+		}
+
+	}
+
+}
+
+
+package com.demo.loops;
+
+import java.util.Scanner;
+
+public class Loops {
+
+	public static void main(String[] args) {
+
+		Scanner sc= new Scanner(System.in);
+		System.out.println("ENter your number");
+		int mul = sc.nextInt();
+		for (int i = 1; i <= 10; i++) {
+			 System.out.println(mul*i);
+		}
+
+	}
+
+}
+
+package com.demo.loops;
+
+public class Loops {
+
+	public static void main(String[] args) {
+
+		for (int i = 1; i <= 10; i++)
+			System.out.println(9 * i);
+		System.out.println("hello");
+
+	}
+
+}
+
+
+package com.demo.loops;
+
+public class Loops {
+
+	public static void main(String[] args) {
+
+		for (int i = 1; true; i++)
+			System.out.println(9 * i);
+		System.out.println("hello");
+
+	}
+
+}
+
+
+Exception in thread "main" java.lang.Error: Unresolved compilation problem: 
+	Unreachable code
+
+	at com.demo.loops.Loops.main(Loops.java:9)
+
+
+	package com.demo.loops;
+
+public class Loops {
+
+	public static void main(String[] args) {
+
+		int i = 0;
+		for (System.out.println("hello"); i < 10; i++)
+			System.out.println("welcome");
+
+	}
+
+}
+
+
+package com.demo.loops;
+
+public class Loops {
+
+	public static void main(String[] args) {
+
+		for (int i = 0; i <= 10; i++) {
+
+			if (i % 2 == 0) {
+				System.out.println("Even number :" + i);
+			}
+		}
+		System.out.println("Hello");
+
+	}
+
+}
+
+Nested For:
+-----------
+
+for(initialization ; condition ; inc/dec/expression){
+
+    for(initialization ; condition ; inc/dec/expression){
+       //statement
+    }
+	
+	//statement
+}
+
+void	println()
+Terminates the current line by writing the line separator string.
+
+package com.demo.loops;
+
+public class Loops {
+
+	public static void main(String[] args) {
+
+		for (int i = 1; i <= 5; i++) {
+
+			for (int j = 1; j <= i; j++) {
+				System.out.print(j+" ");
+			}
+			System.out.println();
+
+		}
+	}
+
+}
