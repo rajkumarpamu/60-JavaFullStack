@@ -1,0 +1,134 @@
+
+sum
+sum()
+Sum
+SUM
+
+Comments:
+---------
+
+Single Line Comments :
+
+//statement
+
+Multi Line Comments:
+
+/*
+statement1;
+statement2;
+sattement3;
+*/
+
+
+Document Line Comments:
+----------------------
+
+/**
+The Array class provides static methods to dynamically create and access Java arrays.
+Array permits widening conversions to occur during a get or set operation, but throws an IllegalArgumentException if a narrowing conversion would occur.
+*/
+
+G:\Advance-Java\New folder>javadoc Comments.java
+
+G:\Advance-Java\New folder>javadoc *.java
+
+
+
+/**
+ * @author Raj
+ * @version 1.8
+ * @since 2024
+ * @apiNote This class created for Comments Session
+ */
+public class Comments {
+
+/**
+* this is a main method used to start the application 
+*
+*/
+public static void main(String[] args) {
+
+		System.out.println("sattement-1");
+		System.out.println("sattement-5");
+
+	}
+}
+	
+
+Conditional Based execution:
+-----------------------------
+
+if ..else
+
+if(condition)
+{
+	//statement
+}
+else{
+	
+}
+
+package com.demo;
+
+public class CondStatmtDemo {
+	
+	public static void main(String[] args) {
+		
+		int age=30;
+		
+		if(age>18 || age==18) {
+			System.out.println("Hello");
+			System.out.println("Eligible for voting");
+		}
+		else {
+			System.out.println("Hello");
+			System.out.println("Not Eligible for voting");
+		}
+		
+		System.out.println("Welcome");
+	}
+
+}
+
+
+package com.demo;
+
+public class CondStatmtDemo {
+	
+	public static void main(String[] args) {
+		
+		int age=30;
+		
+		if(1+2+3 ==6) {
+			System.out.println("Hello");
+			System.out.println("Eligible for voting");
+		}
+		else {
+			System.out.println("Hello");
+			System.out.println("Not Eligible for voting");
+		}
+		
+		System.out.println("Welcome");
+	}
+
+}
+
+
+package com.demo;
+
+public class CondStatmtDemo {
+	
+	public static void main(String[] args) {
+		
+		int age=29;
+		
+		if(age<30) {
+			System.out.println("Hello");
+		   System.out.println("test");
+		}
+		else
+		    System.out.println("Welcome");
+		  
+	}
+
+}

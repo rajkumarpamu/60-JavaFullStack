@@ -1,0 +1,255 @@
+
+
+Bitwise Operators:
+-------------------
+
+&
+
+|
+
+^
+
+Ternary Operators: (?:)
+------------------
+
+
+(condition) ? (expression1) : (expression2);
+
+
+package com.demo;
+
+public class LogicalOperators {
+
+	public static void main(String[] args) {
+
+	
+		int age= 18;
+		
+		
+		String message = (age>=18) ? "Eligible for voting" : "Not eligible for voting";
+		
+		System.out.println(message);
+	
+		
+		
+	}
+
+}
+
+
+package com.demo;
+
+public class LogicalOperators {
+
+	public static void main(String[] args) {
+
+	
+		int age= 17;
+		
+		int a=10;
+		int b=20; 
+		
+		
+		int result = (age>=18) ? a+b : a-b;
+		
+		System.out.println(result);
+	
+		
+		
+	}
+
+}
+
+
+package com.demo;
+
+public class LogicalOperators {
+
+	public static void main(String[] args) {
+
+	
+		int age= 17;
+		
+		int a=10;
+		int b=20; 
+		
+		
+		int result = (age<=18) ? ((a>b)? (a+b) : (a-b)) : (a*b);
+		
+		System.out.println(result);
+	
+		
+		
+	}
+
+}
+
+
+Assigment Operator:  Assign value to a variable
+-------------------
+
+datatype varname = value;
+
+package com.demo;
+
+public class LogicalOperators {
+
+	public static void main(String[] args) {
+
+		int a = 10; // assigning value to a variable
+
+		int b = a; // a value is assigned to b
+		
+		int c = a+b; // expression
+
+		System.out.println(a);
+		System.out.println(b);
+		System.out.println(c);
+
+	}
+
+}
+
+Compound Assigment Operator:
+----------------------------
+
++=  a = a+10  -> a +=10
+*=  a = a*10  -> a *=10
+-=  a = a-10  -> a -=10
+/=  a = a/10  -> a /=10
+%=  a = a%10  -> a %=10
+
+
+package com.demo;
+
+public class LogicalOperators {
+
+	public static void main(String[] args) {
+
+		int a = 10;
+		a += 10;
+		System.out.println(a);
+
+		a *= 3;
+		System.out.println(a);
+
+		a -= 10;
+		System.out.println(a);
+	}
+
+}
+
+
+class <classname>{
+	
+
+  main(){
+
+   //statement
+
+  }
+
+
+}
+
+
+javac 
+
+java
+
+
+Rules of indentifiers:
+----------------------
+
+int age = 10;
+
+1)An indentifer name should not start with number
+2)An indentifer name should not contain special charcters except $ and _ 
+3)Identifer name should be meaningfull 	
+
+package com.demo;
+
+ class LogicalOperators{
+
+	public static void main(String[] args) {
+
+	
+        int employeeAge = 30;
+        
+        System.out.println(employeeAge);
+		
+		
+	}
+
+}
+
+4)length of an identifer should not exceed 16 charcters
+5)A keyword cannot be used as an identifer
+
+package com.demo;
+
+ class LogicalOperators{
+
+	public static void main(String[] args) {
+
+	
+
+		int for =10;
+		
+	}
+
+}
+
+Note: Syntax error on token "for", invalid VariableDeclaratorId
+
+
+age  -> variable
+Age  -> claas Capitalized Convention
+
+AbstractAction
+AbstractAnnotationValueVisitor6
+AbstractAnnotationValueVisitor7
+AbstractAnnotationValueVisitor8
+AbstractBorder
+AbstractButton
+AbstractCellEditor
+AbstractChronology
+AbstractCollection
+AbstractColorChooserPanel
+AbstractDocument
+AbstractDocument.At
+
+class demo{}
+
+
+
+int sumOfTwoNumber : Camel Convention
+
+getPropertyChangeListeners - Variable
+
+
+getPropertyChangeListeners() - Method\
+
+
+Addition
+addition
+addition()
+ADDITION
+
+package com.demo;
+
+ class LogicalOperators{
+
+	public static void main(String[] args) {
+		System.out.println(Integer.MAX_VALUE);
+		System.out.println(Integer.MIN_VALUE);
+		
+	}
+
+}
+
+
+test
+test()
+Test
+TEST
