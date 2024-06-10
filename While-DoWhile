@@ -1,0 +1,143 @@
+while:
+------
+while(condition){
+	//statement;
+}
+
+
+package com.demo.loops;
+
+public class WhileLoop {
+	
+	public static void main(String[] args) {
+		
+		int i=1;
+		
+		while(i<=10) {
+			System.out.println("welcome to java");
+			i++;
+		}
+			
+		
+	}
+
+}
+
+
+1+2
+
+""+10
+
+package com.demo.loops;
+
+import java.util.Scanner;
+
+public class WhileLoop {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter your number to multiply");
+		int number = sc.nextInt();
+		int i = 1;
+
+		while (i <= 10) {
+			System.out.println(number + "*" + i + "=" + (number * i));
+			i++;
+		}
+
+	}
+
+}
+
+
+do..while
+----------
+
+
+do{
+	//statement
+}
+while(condition);
+
+package com.demo.loops;
+
+import java.util.Scanner;
+
+public class WhileLoop {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter your number to multiply");
+		int number = sc.nextInt();
+		int i = 1;
+
+		do {
+			System.out.println(number + "*" + i + "=" + (number * i));
+			i++;
+		} while (i <= 10);
+
+	}
+
+}
+
+
+123 = 6
+1234 = 10
+
+package com.demo.loops;
+
+import java.util.Scanner;
+
+public class WhileLoop {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter your number to multiply");
+		int number = sc.nextInt(); // 123 321
+		int temp = number;
+
+		int reverse = 0;
+		while (temp != 0) {
+			int reminder = temp % 10;
+			reverse = reverse * 10 + reminder;// 3
+			temp = temp / 10;
+		}
+
+		if (number == reverse) {
+			System.out.println("Its Palindrome  :" + reverse);
+		} else {
+			System.out.println("Its not Palindrome  :" + reverse);
+		}
+
+	}
+
+}
+
+
+The expression "5 factorial" is calculated as 5 x 4 x 3 x 2 x 1, which equals 120.
+
+
+package com.demo.loops;
+
+import java.util.Scanner;
+
+public class WhileLoop {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter your number to multiply");
+		int number = sc.nextInt();
+		
+		int factorial=1;
+		for(int i=1;i<=number;i++) {
+			factorial = factorial*i;
+		}
+
+		System.out.println(factorial);
+	}
+
+}
