@@ -1,0 +1,147 @@
+Jump Statement:
+---------------
+
+break  -> Stop the iteration
+
+package com.demo.jumpstatements;
+
+public class App {
+
+	public static void main(String[] args) {
+		System.out.println("Welcome");
+
+		for (int i = 1; i <= 10; i++) {
+			if (i == 5)
+				break; //Stop the iteration
+			System.out.println(i);
+		}
+
+		System.out.println("Hello");
+	}
+
+}
+
+
+package com.demo.jumpstatements;
+
+public class App {
+
+	public static void main(String[] args) {
+		System.out.println("Welcome");
+
+		for (int i = 1; i <= 5; i++) {
+			System.out.println(" Iteration:" + i + " started");
+
+			for (int j = 1; j <= i; j++) {
+
+				if(i==5) {
+					break;
+				}
+				System.out.println("j value " + j);
+			}
+
+			System.out.println(" iteration:" + i + " completed");
+		}
+
+		System.out.println("Hello");
+	}
+
+}
+
+continue -> Skip the iteration
+
+
+
+package com.demo.jumpstatements;
+
+public class App {
+
+	public static void main(String[] args) {
+		System.out.println("Welcome");
+
+		for (int i = 1; i <= 10; i++) {
+			if (i == 5 | i==7)
+				continue; // Skip the iteration
+			System.out.println(i);
+		}
+
+		System.out.println("Hello");
+	}
+
+}
+
+
+switch(1){
+	
+
+
+case 1 : statement;
+         break;
+
+
+case 2 : statement;
+         break;
+
+}
+
+return  -> return back to the caller
+
+package com.demo.jumpstatements;
+
+public class App {
+
+	public static void main(String[] args) {
+		System.out.println("Welcome");
+
+		for (int i = 1; i <= 10; i++) {
+			if (i == 5 | i == 7) {
+				return;
+			}
+			System.out.println(i);
+		}
+
+		System.out.println("Hello");
+	}
+
+}
+
+
+fibanocci serires: 10
+
+In mathematics, the Fibonacci sequence is a sequence in which each number is the sum of the two preceding ones
+
+0  1  1 
+
+n1=0;
+n2=1;
+n3= n1+n2
+
+package com.demo.jumpstatements;
+
+import java.util.Scanner;
+
+public class App {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("ENter your sequence");
+		int sequnce = sc.nextInt();
+		// 0 1 1 2 3
+
+		int n1 = 0;
+		int n2 = 1;
+		int n3;
+		System.out.print(n1 + " " + n2);
+
+		for (int i = 3; i <=sequnce ; i++) {
+			n3 = n1 + n2;
+			System.out.print(" "+n3 + " ");
+			n1 = n2;
+			n2 = n3;
+
+		}
+
+	}
+
+}
