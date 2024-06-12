@@ -1,0 +1,153 @@
+Prime Number:
+-------------
+
+Prime numbers are natural numbers that are divisible by only 1 and the number itself. In other words, prime numbers are positive integers greater than 1 with exactly two factors, 1 and the number itself. Some of the prime numbers include 2, 3, 5, 7, 11, package com.demo.loops;
+
+import java.util.Scanner;
+
+public class PrimeNumber {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter your number");
+		int number = sc.nextInt();
+		boolean flag = true;
+		if (number == 0 | number == 1) {
+			System.out.println("Its not a prim number");
+		} else {
+
+			for (int i = 2; i <= number/2; i++) {
+				if (number % i == 0) {
+					flag = false;
+					break;
+				}
+			}
+
+		}
+
+		if (flag) {
+			System.out.println("Its a prime number");
+		}
+
+		else {
+			System.out.println("Its not a prime number");
+		}
+	}
+
+}
+, etc
+
+25package com.demo.loops;
+
+import java.util.Scanner;
+
+public class PrimeNumber {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter your number");
+		int number = sc.nextInt();
+		boolean flag = true;
+		if (number == 0 | number == 1) {
+			System.out.println("Its not a prim number");
+		} else {
+			for (int i = 2; i < number; i++) {
+				if (number % i == 0) {
+					flag = false;
+					break;
+				}
+			}
+
+		}
+
+		if (flag) {
+			System.out.println("Its a prime number");
+		}
+
+		else {
+			System.out.println("Its not a prime number");
+		}
+	}
+
+}
+
+package com.demo.loops;
+
+import java.util.Scanner;
+
+public class PrimeNumber {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter your number");
+		int number = sc.nextInt();
+		boolean flag = true;
+		if (number == 0 | number == 1) {
+			System.out.println("Its not a prim number");
+		} else {
+
+			for (int i = 2; i <= number/2; i++) {
+				if (number % i == 0) {
+					flag = false;
+					break;
+				}
+			}
+
+		}
+
+		System.out.println(flag ? "Its a prime": "Its not a prime");
+	}
+
+}
+
+
+class and object:
+----------------
+
+Employee
+
+Object:
+-------
+Copy of a class
+
+new keyword
+------------
+new classname();
+new Employee();
+
+Dot operator:
+-------------
+
+
+Employee emp = new Employee();
+
+refernce.varname;
+refernce.methodName();
+
+emp.varname;
+emp.methodName();
+
+package com.demo.objectdemo;
+
+public class Employee {
+	
+	int age=30;
+
+}
+
+
+package com.demo.objectdemo;
+
+public class App {
+	
+	public static void main(String[] args) {
+		
+		
+		Employee employee = new Employee();
+		System.out.println(employee.age);
+	}
+
+}
